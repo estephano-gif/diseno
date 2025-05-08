@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    font-family: Arial;
+}
+header{
+    background-color: red;
+    height: 80px;
+}
+nav{
+    background-color: rgb(209, 53, 53);
+    width: 25%;
+
+}
+
+section{
+    background-color: rgb(240, 147, 147);
+    width: 35%;
+}
+footer{
+    background-color: rgb(247, 15, 15);
+    line-height: 50px;
+    color: white;
+    clear: left;
+
+    
+}
+nav,section{
+    float: left;
+    height: calc(100vh - 130px);
+}
+p{
+    padding: 15px;
+
+}
+aside{
+    background-color: red;
+    height: 825px;
+}

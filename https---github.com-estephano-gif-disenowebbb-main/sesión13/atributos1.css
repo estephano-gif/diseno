@@ -1,0 +1,13 @@
+/* ejercicio1
+.externo{
+    color: green;
+
+}*/
+
+/*ejercicio2
+a[class="externo"]{
+    color: green;
+}*/
+a.prueba{
+    color: magenta;
+}

@@ -1,0 +1,10 @@
+*{
+    margin:0 px; 
+}
+#caja {
+    width: 50%;
+    margin: 0 px;
+    padding: 10px;
+    background-color: aquamarine;
+    height: 60px;
+}
