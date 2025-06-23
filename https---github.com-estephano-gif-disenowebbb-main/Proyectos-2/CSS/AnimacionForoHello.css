@@ -1,0 +1,199 @@
+body{
+    margin: 60px;
+    justify-content: center;
+}
+
+.cara{
+    justify-content: center;
+    width: 450px;
+    height: 350px;
+    border: 5px solid black;
+    border-radius: 47%;
+    left: 36%;
+    top: 20%;
+    position: absolute;
+    animation: saltar 10s infinite;
+
+}
+
+@keyframes saltar {
+    0%{ 
+        transform: scale(1); 
+    }
+    50% { 
+        transform: scale(2.1); 
+    }
+    100%{ 
+        transform: scale(1); 
+    }
+  }
+
+.ojo::before, .ojo::after{
+    content: '';
+    position: absolute;
+    top: 170px;
+    width: 35px;
+    height: 50px;
+    background-color: black;
+    border-radius: 50%;
+    animation: parpadeo 10s infinite;
+}
+
+@keyframes parpadeo {
+    0%, 20%, 40%, 60%, 100% { height: 50px; }
+    10%, 30%, 50% { height: 1px; }
+  }
+
+.ojo::before{
+    left: 70%;
+}
+
+.ojo::after{
+    left: 22%;
+}
+
+.nariz{
+    width: 35px;
+    height: 20px;
+    border: 4px solid black;
+    border-radius: 46%;
+    top: 220px;
+    left: 45%;
+    position: absolute;
+    background-color: yellow;
+}
+
+.orejas::after, .orejas::before{
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    background-color: rgb(255, 255, 255);
+    border-top: 5px solid black;
+    border-left: 5px solid black;
+    border-radius: 5%;
+}
+
+.orejas::after{
+    content: '';
+    top: -14px;
+    left: 30px;
+    transform: rotate(18deg);
+}
+
+.orejas::before{
+    content: '';
+    top: -14px;
+    left: 273px;
+    transform: rotate(68deg);
+}
+
+.bigotes::before, .bigotes::after{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 250px;
+    border: 1px solid black;
+    background-color: black;
+    border-radius: 20%;
+    clip-path: polygon(0 50%, 20% 20%, 80% 20%, 100% 50%, 80% 80%, 20% 80%);
+}
+
+.bigotes::before{
+    left: 110%;
+    top: 20px;
+    transform: rotate(77deg);
+}
+
+.bigotes::after{
+    left: -14%;
+    top: 20px; 
+    transform: rotate(-77deg);
+}
+
+.bigotes2::before, .bigotes2::after{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 150px;
+    border-top: 1px solid black;
+    background-color: black;
+    border-radius: 20%;
+    clip-path: polygon(0 50%, 20% 20%, 80% 20%, 100% 50%, 80% 80%, 20% 80%);
+}
+
+.bigotes2::before{
+    left: 107%;
+    top: 120px;
+    transform: rotate(85deg);
+}
+ 
+.bigotes2::after{
+    left: -10%;
+    top: 120px;  
+    transform: rotate(-85deg);
+}
+
+.bigotes3::before, .bigotes3::after{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 220px;
+    border: 1px solid black;
+    background-color: black;
+    border-radius: 20%;
+    clip-path: polygon(0 50%, 20% 20%, 80% 20%, 100% 50%, 80% 80%, 20% 80%);
+}
+
+.bigotes3::before{
+    left: 109%;
+    top: 130px;
+    transform: rotate(-85deg);
+}
+ 
+.bigotes3::after{
+    left: -12%;
+    top: 130px;  
+    transform: rotate(85deg);
+}
+
+.moño{
+    position: absolute;
+    width: 20px;
+    height: -70px; 
+    top: -10px;
+    left: 301px;
+    border-radius: 40%;
+    border-right: 50px solid transparent; 
+    border-bottom: 50px solid red ;
+    border-top: 50px solid red;
+    border-left: 50px solid transparent;
+    transform: rotate(-50deg);
+
+}
+
+.centro_lado::before{
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 30px;
+    top: 0px;
+    left: -25px;
+    background-color: #cc0029;
+    border: 3px solid black;
+    border-radius: 45%; 
+    transform: rotate(85deg);
+}
+
+.centro{
+    position: relative;
+    left: 30%;
+    width: 36px;
+    height: 36px;
+    top: -2px;
+    left: -13px; 
+    background-color: red;
+    border: 3px solid black;
+    border-radius: 100%;
+}
+
+

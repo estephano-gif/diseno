@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta de cine</title>
+    <link rel="stylesheet" href="CSS/oscarMejora.css">
+</head>
+<body>
+    <img id="premio" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Academy_Award_of_Merit_%28Oscar%29.png/800px-Academy_Award_of_Merit_%28Oscar%29.png" alt="trofeo">
+    <div id="contenedor">
+        <h1>Encuesta de cine: Nominadas al Oscar 2018</h1>
+
+        <form id="formulario" name="formulario" method="post"> <!--PARA INICIAR EL FORMULARIO-->
+            <fieldset id="datos_personales"> 
+                <legend>Datos Personales</legend>
+                <label for="nombre">Nombre</label>
+                <!--id= identificador; name=nombre al campo (identificar dentro del formuladio)-->
+                <input type="text" name="nombre" id="nombre"> <br>
+
+                <label for="direc">Apellido</label>
+                <input type="text" name="direc" id="direc"> <br>
+
+                <label for="telef">DNI</label>
+                <input type="text" name="dni" id="dni" maxlength="9"> <br>
+
+                <!--SELECCIONAR ES UN COMBO BOX-->
+                <label for="puesto">Sexo</label> <br>
+                <select name="sex" id="sex">
+                    <option value="X" selected="selected"> &nbsp; ... &nbsp; </option>
+                    <option value="A"> &nbsp; ... &nbsp; </option>
+                    <option value="B"> &nbsp; ... &nbsp; </option>
+                </select> <br>
+                
+            </fieldset> <br>
+
+            <fieldset id="mejorPelicula"> 
+                <legend>Mejor pelicula</legend>
+                <input type="radio" name="CMBYN" value="CMBYN"> Call Me By Your Name <br>
+                <input type="radio" name="dunk" value="dunk"> Dunkerque <br>
+                <input type="radio" name="dejame" value="dejame"> Déjame salir <br>
+            </fieldset> <br>
+
+            <fieldset id="pelisNoVistas">
+                <legend>Seleccione las películas que no hayas visto</legend>
+                <input type="checkbox" name="opc1"> El hilo invisible <br>
+                <input type="checkbox" name="opc2"> El instante más oscuro<br>
+                <input type="checkbox" name="opc3"> Tres anuncios a las afueras<br>
+                <input type="checkbox" name="opc4"> La forma del agua<br>
+                <input type="checkbox" name="opc5"> Lady bird<br>
+            </fieldset> <br>
+
+            <fieldset id="argumentoPeli">
+                <legend>Argumento de tu película preferida</legend>
+                <textarea name="observ" id="observ" rows="10" cols="50"></textarea>
+            </fieldset> <br>
+
+            <div id="botones">
+                <input type="reset" class="btn" value="Borrar formulario">
+                <input type="submit" class="btn" value="Enviar">
+                </div>
+        </form>
+
+        
+    </div>
+    
+
+</body>
+</html>

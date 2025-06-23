@@ -1,0 +1,110 @@
+input {
+    display: block;
+    margin: 10px;
+}
+
+.contenedor {
+    background-color: #a7def6;
+    font-family: 'Segoe UI';
+    margin: auto;
+    color: purple;
+    height: auto;
+    width: 470px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+form {
+    margin-top: 0px;
+    padding: 10px;
+}
+
+span {
+    width: 100px;
+    display: block;
+    float: left;
+}
+
+.botones {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.nom {
+    background-color: palevioletred;
+    padding: 5px;
+    margin: 5px 0;
+    text-align: center;
+    flex: 1;
+}
+
+.titu-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: steelblue;
+    padding: 10px 0;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.titu {
+    width: 33.33%; /* Distribuye los títulos en partes iguales */
+    text-align: center;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    margin-top: 5px;
+    list-style: none;
+    background-color: palevioletred;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+    margin: 4px;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+button:nth-child(1) {
+    background-color: #28a745;
+}
+
+button:nth-child(2) {
+    background-color: #007bff;
+}
+
+button:nth-child(3) {
+    background-color: #dc3545;
+}
+
+button:nth-child(4) {
+    background-color: #ffc107;
+    color: #333;
+}
