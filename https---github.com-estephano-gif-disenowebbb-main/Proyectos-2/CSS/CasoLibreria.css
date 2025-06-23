@@ -1,0 +1,118 @@
+body {
+    font-family: 'Times New Roman';
+    background-color: aquamarine;
+    padding: 20px;
+}
+
+.grid {
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 25% 18%px 100px;
+    grid-template-areas:
+        "encabezado"
+        "menuu"
+        "contenido"
+        "links"
+        "pie";
+}
+
+header {
+    background-color: rgb(150, 207, 209);
+    grid-area: encabezado;
+    text-align: center;
+}
+
+#imagenLibro{
+    max-width: 200px;
+    width: 100px;
+    margin-bottom: 0;
+    margin-left: 50px;
+}
+
+#separador1{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px;
+    align-items: center;
+}
+
+#separador2{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px;
+    align-items: center;
+}
+
+#separador3{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px;
+    align-items: center;
+}
+
+#separador4{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px;
+    align-items: center;
+}
+
+nav {
+    background-color: rgb(108, 85, 112);
+    justify-content: space-around;
+    align-items: center;
+    grid-area: menuu;
+    padding: 10px;
+    
+}
+
+#menuNav{
+    margin-left: 10px;
+}
+
+section {
+    background-color: palegreen;
+    grid-area: contenido;
+    padding: 10px;
+}
+
+aside {
+    background-color: coral;
+    grid-area: links;
+    padding: 10px;
+}
+
+
+footer {
+    background-color: sandybrown;
+    grid-area: pie;
+    text-align: center;
+    
+}
+
+
+/*PANTALLA COMPLETA */
+@media (min-width: 1001px) {
+    .grid {
+        grid-template-columns: 15% 1fr 15%;
+        grid-template-rows: 200px 600px 80px;
+        grid-template-areas:
+            "encabezado encabezado encabezado"
+            "menuu contenido links"
+            "pie pie pie";
+    }
+}
+
+@media (min-width: 700px) and (max-width: 1000px) {
+    .grid {
+        grid-template-columns: 100%;
+        grid-template-rows: 200px 260px 1fr 1fr 60px;
+        grid-template-areas:
+            "encabezado "
+            "menuu "
+            "contenido "
+            "links"
+            "pie ";
+    }
+}

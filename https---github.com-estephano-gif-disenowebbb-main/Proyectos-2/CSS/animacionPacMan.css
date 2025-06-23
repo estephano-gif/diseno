@@ -1,0 +1,151 @@
+div{
+    background-color: plum;
+    width: 18px;
+    height: 10px;
+    color: white;
+    padding: .2rem .3rem 1rem .3rem;
+    position: absolute;
+    border-radius: 2rem 2rem 0 0;
+    animation: animar 10S infinite; 
+    
+}
+
+
+@keyframes animar {
+    0%{
+        left: 110px;
+        top: 280px;
+
+    } 
+    7%{
+        left: 195px;
+        top: 280PX;
+        color: plum;
+    } 
+    13%{
+        left: 195px;
+        top: 122px;
+        color: white;
+    } 
+    17%{
+        left: 130px;
+        top: 120px; 
+        color: plum;
+    } 
+    21%{
+        left: 130px;
+        top: 200px;
+        color: white;
+    }
+    24%{
+        left: 200px;
+        top: 200px;
+        color: plum;
+    }
+    30%{
+        left: 200px;
+        top: 352px;
+        color: white;
+    }
+    34%{
+        left: 130px;
+        top: 352px;
+        color: plum;
+    }
+    36%{
+        left: 130px;
+        top: 390px;
+        color: white;
+    }
+    38%{
+        left: 160px;
+        top: 390px;
+        color: plum;
+    }
+    40%{
+        left: 160px;
+        top: 430px;
+        color: white;
+    }
+    42%{
+        left: 130px;
+        top: 430px;
+        color: plum;
+    }
+    44%{
+        left: 130px;
+        top: 460px;
+        color: white;
+    }
+    54%{ /*DIFERENCIA DE 10*/
+        left: 460px;
+        top: 460px;
+        color: plum;
+    }
+    56%{
+        left: 460px;
+        top: 430px;
+        color: white;
+    }
+    58%{
+        left: 430px;
+        top: 430px;
+        color: plum;
+    }
+    62%{
+        left: 430px;
+        top: 390px;
+        color: white;
+    }
+    66%{
+        left: 460px;
+        top: 390px;
+        color: plum;
+    }   
+    69%{
+        left: 460px;
+        top: 352px;
+        color: white;
+    }
+    74%{
+        left: 390px;
+        top: 352px;
+        color: plum;
+    }
+    82%{
+        left: 390px;
+        top: 130px;
+        color: white;
+    } 
+    85%{
+        left: 450px;
+        top: 130px;
+        color: plum;
+    }
+    89%{
+        left: 450px;
+        top: 210px;
+        color: white;
+    } 
+    92%{
+        left: 400px;
+        top: 210px;
+        color: plum;
+    }
+    96%{
+        left: 400px;
+        top: 280px;
+        color: white;
+    }
+    98%{
+        left: 490px;
+        top: 280px;
+        color: plum;
+    }
+    100%{
+        left: 490px;
+        top: 280px;
+        color: white;
+    }
+
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>EjercicioFormulario</title>
+    <!--ICONO PARA LA PESTAÑA-->
+    <link rel="icon" href="Imagen/trabajador.png">
+    <link rel="stylesheet" href="CSS/formulario.css">
+</head>
+
+<body>
+
+    <!--1° Contenedor
+    se utiliza para agrupar otros elementos-->
+    <div id="Contenedor">
+    
+        <!--Darle estilo y centrarlo-->
+        <h1>Encuesta laboral <img src="Imagen/trabajador.png" alt="trabajador"></h1>
+
+        <form id="formulario1" name="formulario1" method="post" action="data.php">
+            <fieldset id="datos_personales"> 
+                <legend>Datos Personales</legend>
+                    <!--NOMBRE DE LOS CAMPOS y el espacio para ingresar
+                    *label= area de etiquetas-->
+                    <label for="nombre">Nombre y Apellidos</label>
+                    <!--id= identificador; name=nombre al campo (identificar dentro del formuladio)-->
+                    <input type="text" name="nombre" id="nombre"> <br>
+                    
+                    <label for="direc">Direccion</label>
+                    <input type="text" name="direc" id="direc"> <br>
+
+                    <label for="telef">Telef | Cel.</label>
+                    <input type="text" name="dni" id="dni" maxlength="9"> <br>
+
+                    <label for="fecIngre">Fecha Ingreso</label>
+                    <input type="date" name="fecIngre" id="fecIngre"> <br>
+
+                    <!--SELECCIONAR ES UN COMBO BOX-->
+                    <label for="puesto">Puesto de Trabajo</label>
+                    <select name="puesto" id="puesto">
+                        <option value="X" selected="selected"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </option>
+                        <option value="A"> &nbsp; </option>
+                        <option value="B"> &nbsp; </option>
+                    </select> <br>
+
+                    <label for="dni">DNI</label> 
+                    <!--maxlength= numero de caracteres máximo que puede ingresar el usuario-->
+                    <input type="text" name="dni" id="dni" maxlength="9"> <br>
+
+                    <label for="corre">Email</label>
+                    <input type="email" name="corre" id="corre"> <br>
+            </fieldset> <br>
+
+            <fieldset id="estado_civil"> 
+                <legend>Estado Civil</legend>
+                <input type="radio" name="estadoCivil" value="Soltero">Soltero <br>
+                <input type="radio" name="estadoCasado" value="Casado">Casado <br>
+                <input type="radio" name="estadoDivorciado" value="Divorciado">Divorciado <br>
+            </fieldset> <br>
+
+            <!--CASILLA DE VERIFICACION-->
+            <fieldset id="nivel_satisfaccion">
+                <legend>Nivel de satisfacción</legend>
+                <input type="checkbox" name="satisfecho"> Se siente satisfecho con el trabajo que realiza <br>
+                <input type="checkbox" name="canales"> Los canales de comunicación <br>
+                <input type="checkbox" name="trato"> El trato de los directivos es cordial y efectivo <br>
+                <input type="checkbox" name="ambiente"> El ambiente laboral es el adecuado para mi trabajo <br>
+            </fieldset> <br>
+
+            <!--Cuadro para ingresar el texto-->
+            <fieldset>
+                <legend>Observaciones</legend>
+                <textarea name="observ" id="observ" rows="5" cols="60"></textarea>
+            </fieldset> <br>
+
+            <div id="botones">
+                <input id="btn" type="reset" class="btn" value="Nuevo">
+                <input id="btn" type="submit" class="btn" value="Enviar">
+            </div>
+        </form>  
+    </div>
+
+</body>
+
+</html>
